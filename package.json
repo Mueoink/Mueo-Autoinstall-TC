@@ -1,0 +1,21 @@
+{
+  "name": "mueo-autoinstall",
+  "version": "1.0.0",
+  "description": "自动安装酒馆、clewd以及配套环境脚本",
+  "bin": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pkg . "
+  },
+    "pkg": {
+    "scripts": ["app.js"],  
+    "targets": ["node18-win-x64"]
+  },
+  "author": "Mueo",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "inquirer": "^12.3.0"
+  }
+}
